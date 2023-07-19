@@ -1,0 +1,26 @@
+local repo = "https://raw.githubusercontent.com/TrapstarKSSKSKSKKS/Main/main/"
+local function LoadScript(ScriptName)
+	pcall(function()
+		t = 0
+		repeat
+			local s, r = pcall(function()
+				loadstring(game:HttpGet(repo .. ScriptName))()
+			end)
+			if not s then
+				spawn(function()
+				  end)
+			end
+			t = t + 1
+			wait(60)
+		until getgenv().Executed or t >= 30
+	end)
+end
+local Id = game.PlaceId
+local PlaceIds = 6299805723 then
+}
+if table.find(PlaceIds["AFS"], Id) then --
+Anime Fighters Simulator
+	LoadScript("afsdupe.lua")
+else -- Astd
+	LoadScript("Astd.lua")
+end
